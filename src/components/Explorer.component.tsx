@@ -12,7 +12,7 @@ const Explorer = ({ activeEntity, setActiveEntity }: Props) => {
 
   const handleEntityClick = (entity: string, type: string) => {
     if (type !== "folder") {
-      setActiveEntity(entity); // Only update activeEntity if it's not a folder
+      setActiveEntity(entity); 
     }
   };
 

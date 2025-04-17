@@ -78,15 +78,21 @@ const About = () => {
         routers and modems. I am skilled in ensuring stable and efficient
         network operations while maintaining secure and reliable configurations.
       </p>
+      <p className="pt-4 text-lg text-sky-500">Computer Hardware Technician</p>
+      <p className="pt-2 text-lg text-gray-300">
+        As a Computer Hardware Technician, I have hands-on experience in
+        assembling, diagnosing, and repairing computer systems. From building
+        custom PCs to troubleshooting hardware issues, I ensure optimal
+        performance and reliability. My expertise also includes upgrading
+        components and maintaining hardware to meet user needs effectively.
+      </p>
       <p className="pt-4 text-lg text-sky-500">| Language</p>
       <div className="flex gap-4 pt-2 text-lg text-gray-300">
         <p>Vietnamese - Native</p>
         <p>|</p>
-        <p>
-          English - Advanced
-        </p>
+        <p>English - Advanced</p>
       </div>
     </div>
   );
 };
-export default About; 
+export default About;

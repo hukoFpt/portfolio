@@ -1,5 +1,7 @@
 # Portfolio Website
 
+**Live Demo**: [https://huko.snowdrop.id.vn](https://huko.snowdrop.id.vn)
+
 Welcome to my portfolio website! This project showcases my skills, experience, and projects in a modern and interactive way. Built with [Next.js](https://nextjs.org), it is designed to be fast, responsive, and user-friendly.
 
 ## Features
@@ -23,24 +25,29 @@ Welcome to my portfolio website! This project showcases my skills, experience, a
 To run this project locally, follow these steps:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/portfolio.git
    cd portfolio
 
+   ```
+
 2. Install dependencies:
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 3. Start the development server:
-    ```bash
-    npm run dev
-    ```
+
+   ```bash
+   npm run dev
+   ```
 
 4. Open your browser and navigate to:
-    ```
-    http://localhost:3000
-    ```
+   ```
+   http://localhost:3000
+   ```
 
 ## Scripts
 
@@ -75,14 +82,16 @@ portfolio/
 To deploy this project, you can use platforms like [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com). Follow these steps for deployment on Vercel:
 
 1. Install the Vercel CLI:
-    ```bash
-    npm install -g vercel
-    ```
+
+   ```bash
+   npm install -g vercel
+   ```
 
 2. Deploy the project:
-    ```bash
-    vercel
-    ```
+
+   ```bash
+   vercel
+   ```
 
 3. Follow the prompts to complete the deployment process.
 

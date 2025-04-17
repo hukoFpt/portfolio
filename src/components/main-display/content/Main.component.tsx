@@ -6,7 +6,8 @@ const Main = () => {
       "Fullstack Developer",
       "Mobile Developer",
       "System & Network Administrator",
-    ],
+      "Computer Hardware Technician",
+    ],  
     []
   );
   const [currentRole, setCurrentRole] = useState("");
@@ -18,7 +19,7 @@ const Main = () => {
   useEffect(() => {
     if (isPaused) return;
 
-    const typingSpeed = isDeleting ? 50 : 100;
+    const typingSpeed = isDeleting ? 30 : 60;
     const timeout = setTimeout(() => {
       if (!isDeleting && charIndex < roles[roleIndex].length) {
         setCharIndex((prev) => prev + 1);
@@ -31,7 +32,7 @@ const Main = () => {
         setTimeout(() => {
           setIsPaused(false);
           setIsDeleting(true);
-        }, 2000);
+        }, 1500);
       } else if (isDeleting && charIndex === 0) {
         setIsDeleting(false);
         setRoleIndex((prev) => (prev + 1) % roles.length);

@@ -4,10 +4,11 @@ import Blank from "./main-display/content/Blank.component";
 import Terminal from "./main-display/Terminal.component";
 import Main from "./main-display/content/Main.component";
 import About from "./main-display/content/About.component";
+import Education from "./main-display/content/Education.component";
 
 type Props = {
   data: string | null;
-  setActiveEntity: (entity: string | null) => void; // Function to update activeEntity in the parent
+  setActiveEntity: (entity: string | null) => void;
 };
 
 export const MainDisplay = ({ data, setActiveEntity }: Props) => {
@@ -15,15 +16,15 @@ export const MainDisplay = ({ data, setActiveEntity }: Props) => {
   const [activeTab, setActiveTab] = useState<string>("");
 
   useEffect(() => {
-    if (data && !tabs.find((tab) => tab.id === data)) {
+    if (data && !tabs.some((tab) => tab.id === data)) {
       setTabs((prevTabs) => [...prevTabs, { id: data, label: data }]);
-      setActiveTab(data);
     }
+    setActiveTab(data || "");
   }, [data]);
 
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
-    setActiveEntity(tabId); // Update activeEntity in the parent
+    setActiveEntity(tabId);
   };
 
   const handleCloseTab = (tabId: string) => {
@@ -32,7 +33,7 @@ export const MainDisplay = ({ data, setActiveEntity }: Props) => {
       const remainingTabs = tabs.filter((tab) => tab.id !== tabId);
       const newActiveTab = remainingTabs[remainingTabs.length - 1]?.id || "";
       setActiveTab(newActiveTab);
-      setActiveEntity(newActiveTab || null); // Update activeEntity in the parent
+      setActiveEntity(newActiveTab || null);
     }
   };
 
@@ -52,8 +53,8 @@ export const MainDisplay = ({ data, setActiveEntity }: Props) => {
                 return <Main />;
               case "index.tsx":
                 return <About />;
-              case "settings":
-                return <p className="text-lg">Adjust your Settings here.</p>;
+              case "education.tsx":
+                return <Education />;
               default:
                 return <p className="text-lg">Content for: {activeTab}</p>;
             }

@@ -13,7 +13,10 @@ export default function Home() {
     <div className="flex flex-col h-screen bg-neutral-900 overflow-hidden">
       <TitleBar />
       <div className="flex flex-grow overflow-hidden">
-        <Explorer activeEntity={activeEntity} setActiveEntity={setActiveEntity} />
+        <Explorer
+          activeEntity={activeEntity}
+          setActiveEntity={setActiveEntity}
+        />
         <MainDisplay data={activeEntity} setActiveEntity={setActiveEntity} />
       </div>
       <StatusBar />
