@@ -83,11 +83,11 @@ const About = () => {
         <p>Vietnamese - Native</p>
         <p>|</p>
         <p>
-          English - Advanced
-        </p>
+          English - Advanced 
+        </p> 
       </div>
     </div>
   );
 };
 
-export default About;
+export default About; 
