@@ -4,7 +4,7 @@ import { VscArrowLeft, VscArrowRight, VscSearch } from "react-icons/vsc";
 
 const TitleBar = () => {
   return (
-    <div className="flex items-center h-9 pl-2.5 bg-neutral-900 border-b border-zinc-700">
+    <div className="flex items-center h-9 pl-2.5 bg-neutral-900 border-b border-zinc-700 min-w-full shrink-0">
       {/* Logo section */}
       <div className="flex items-center h-full text-sm text-neutral-400">
         <Image

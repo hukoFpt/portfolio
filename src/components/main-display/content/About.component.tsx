@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-col h-full text-white px-10 pt-5"
+      className="flex flex-col h-full text-white px-10 pt-5 mb-5"
       style={{ fontFamily: "Consolas, monospace" }}
     >
       <h1 className="text-4xl font-bold mb-4">{"<About />"}</h1>
@@ -92,6 +92,7 @@ const About = () => {
         <p>|</p>
         <p>English - Advanced</p>
       </div>
+      <div className="pt-5"/>
     </div>
   );
 };
