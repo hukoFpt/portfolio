@@ -44,7 +44,7 @@ export const MainDisplay = ({ data, setActiveEntity }: Props) => {
         onTabClick={handleTabClick}
         onCloseTab={handleCloseTab}
       />
-      <div className="flex-grow px-4 overflow-scroll">
+      <div className="flex-grow overflow-auto">
         {activeTab ? (
           (() => {
             switch (activeTab) {

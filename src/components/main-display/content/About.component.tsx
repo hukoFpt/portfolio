@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-col h-full text-white px-10"
+      className="flex flex-col h-full text-white px-10 pt-5"
       style={{ fontFamily: "Consolas, monospace" }}
     >
       <h1 className="text-4xl font-bold mb-4">{"<About />"}</h1>
@@ -83,11 +83,10 @@ const About = () => {
         <p>Vietnamese - Native</p>
         <p>|</p>
         <p>
-          English - Advanced 
-        </p> 
+          English - Advanced
+        </p>
       </div>
     </div>
   );
 };
-
 export default About; 
